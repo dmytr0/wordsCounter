@@ -36,3 +36,8 @@ html, body {
     text-decoration: none;
     vertical-align: middle;
 }
+img{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}

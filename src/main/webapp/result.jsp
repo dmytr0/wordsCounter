@@ -21,17 +21,25 @@
 
         <div class="container">
             <div class="content">
+                <div class="images">
+                    <img class="help" width="20" height="20" src="images/help.png" alt="Help" title="The application counts the number of words in the text is repeated two or more times"></p>
+                </div>
                 <div class="data">
-                    <table border="2" cols="2" width="250">
+                    <c:if test="${not empty table}">
+                        <table border="2" cols="2" width="250">
 
-                        <c:forEach var="row" items="${table}">
-                            <tr>
-                                <td>${row.key}</td>
-                                <td>${row.value}</td>
-                            </tr>
-                        </c:forEach>
+                            <c:forEach var="row" items="${table}">
+                                <tr>
+                                    <td>${row.key}</td>
+                                    <td>${row.value}</td>
+                                </tr>
+                            </c:forEach>
 
-                    </table>
+                        </table>
+                    </c:if>
+                    <c:if test="${empty table}">
+                        <c:out value="No repeated words!" />
+                    </c:if>
                 </div>
 
                 <div class="data">

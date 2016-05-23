@@ -21,6 +21,9 @@
         <div class="container">
             <div class="content">
 
+				<div class="images">
+					<img class="help" width="20" height="20" src="images/help.png" alt="Help" title="The application counts the number of words in the text is repeated two or more times"></p>
+				</div>
 				<div class="data">
 					<form action = "/result" method="post">
 
@@ -33,7 +36,7 @@
 
 
 				<div class="data">
-					<p>Or select the file:</p>
+					<p>Or select the file (only txt):</p>
 
 
 					<form  action = "/result" enctype="multipart/form-data" method="post">
