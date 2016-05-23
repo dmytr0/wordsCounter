@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Words counter</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="css/styles.css" rel="stylesheet">
+		
+		<script src="js/main.js">
+			
+		</script>
+
+        
+    </head>
+ 
+    <body>
+        <div class="container">
+            <div class="content">
+				
+				<form action = "/result" method="post">
+				
+				
+					<input onclick='activeFields()' type="radio" name="type" checked>Ввести текст </input>
+					<br/>
+					<br/>
+					<textarea name="inputText" id="inpText" cols="60" rows="10" placeholder="Введите текст"></textarea><br/>
+					<br/>
+					<br/>
+					<input onclick='activeFile()' type="radio" name="type">Загрузить из файла</input>
+					<br/>
+					<br/>
+					<input type="file" id="selectFile" disabled name="file" accept="text/plain"><br/>
+					<br/><br/>
+					
+					<input type="submit" />
+					
+				</form>
+				
+				
+			</div> <!-- end content -->
+        </div> <!-- end conteiner -->
+    </body>
+</html>
